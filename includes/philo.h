@@ -6,7 +6,7 @@
 /*   By: rbardet- <rbardet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 04:21:04 by rbardet-          #+#    #+#             */
-/*   Updated: 2025/03/02 00:20:41 by rbardet-         ###   ########.fr       */
+/*   Updated: 2025/03/02 00:52:27 by rbardet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ typedef struct t_rules
 	int					time_to_sleep;
 	int					number_of_meal;
 	int					check;
+	int					current_time;
 	pthread_mutex_t		write_lock;
 	pthread_mutex_t		dead_lock;
 	t_philo				*philo;

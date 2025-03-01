@@ -6,7 +6,7 @@
 /*   By: rbardet- <rbardet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/01 03:12:39 by rbardet-          #+#    #+#             */
-/*   Updated: 2025/03/02 00:22:47 by rbardet-         ###   ########.fr       */
+/*   Updated: 2025/03/02 00:44:18 by rbardet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +68,12 @@ void	create_thread(pthread_mutex_t **fork, t_rules *rules)
 		}
 		i++;
 	}
-	while (i != 0)
+	i = 0;
+	gettimeofday();
+	while (i < rules->nb_philo)
 	{
 		pthread_join(rules->philo[i].thread, NULL);
-		i--;
+		i++;
 	}
 	free_prog(fork, rules);
 }
