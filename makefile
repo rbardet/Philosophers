@@ -6,15 +6,16 @@
 #    By: rbardet- <rbardet-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/21 22:28:21 by rbardet-          #+#    #+#              #
-#    Updated: 2025/02/28 22:33:09 by rbardet-         ###   ########.fr        #
+#    Updated: 2025/03/01 20:54:54 by rbardet-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = philo
 
-SOURCES = src/philo.c \
+SOURCES = src/main.c \
 	src/philo_utils.c \
-	src/init.c
+	src/init.c \
+	src/routine.c
 
 INCLUDE = -I SOURCES
 
